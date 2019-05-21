@@ -16,44 +16,44 @@ while True:
 	print(' 6 = git status')
 	print('19 = exit')
 
-	jwp = input('Ans: ')
+	jwp = raw_input('Ans: ')
 
-	if jwp == 1:
+	if jwp == "1":
 		cuci()
 		os.system('git add .')
 		print('Done add')
 
-	elif jwp == 2:
+	elif jwp == "2":
 		note = raw_input("comment : ")
 		cuci()
 		os.system("git commit -m '" + note + "'")
 
-	elif jwp == 3:
+	elif jwp == "3":
 		cuci()
 		os.system('git push')
 
-	elif jwp == 4:
+	elif jwp == "4":
 		cuci()
 		os.system('git add .')
 		print('Done add')
 		note = raw_input("comment : ")
 		os.system("git commit -m '" + note + "'")
 
-	elif jwp == 5:
+	elif jwp == "5":
 		cuci()
 		os.system('git init')
 
-	elif jwp == 6:
+	elif jwp == "6":
 		cuci()
 		os.system('git status')
 
-	elif jwp == 0:
+	elif jwp == "0":
 		cuci()
 		os.system('git pull')
 
-	elif jwp == 19:
+	elif jwp == "19":
 		cuci()
 		break
 
 	else:
-		pass
+		os.system('git ' + jwp)
