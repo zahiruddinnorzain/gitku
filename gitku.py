@@ -16,7 +16,7 @@ while True:
 	print(' 6 = git status')
 	print('19 = exit')
 
-	jwp = raw_input('Ans: ')
+	jwp = input('Ans: ')
 
 	if jwp == "1":
 		cuci()
@@ -24,7 +24,7 @@ while True:
 		print('Done add')
 
 	elif jwp == "2":
-		note = raw_input("comment : ")
+		note = input("comment : ")
 		cuci()
 		os.system("git commit -m '" + note + "'")
 
@@ -36,7 +36,7 @@ while True:
 		cuci()
 		os.system('git add .')
 		print('Done add')
-		note = raw_input("comment : ")
+		note = input("comment : ")
 		os.system("git commit -m '" + note + "'")
 
 	elif jwp == "5":
